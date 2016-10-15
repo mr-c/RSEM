@@ -12,11 +12,11 @@ BOOST = .
 
 # Compilation variables
 CXX = g++
-CXXFLAGS = -std=gnu++98 -Wall -I. -I$(BOOST) -I$(SAMTOOLS)/$(HTSLIB)
-CPPFLAGS =
+CXXFLAGS += -std=gnu++98 -Wall -I. -I$(BOOST) -I$(SAMTOOLS)/$(HTSLIB)
+CPPFLAGS ?=
 
-LDFLAGS =
-LDLIBS =
+LDFLAGS ?=
+LDLIBS ?=
 
 # Installation variables
 INSTALL = install
